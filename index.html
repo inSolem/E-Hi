@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-HI</title>
+    <link rel="icon" href="Img/logo2.png" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom Styles -->
+    <link href="Style/styles.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Bar -->
+    <header class="header-bar">
+      <div class="container">
+        <div class="row">
+          <a href="index.html" class="navbar-toggler-icon logo-container col-auto">
+            <img src="Img/logo2.png" alt="Eco Horizon Initiative Logo" class="logo">
+            <span class="company-name">Eco Horizon Initiative</span>
+          </a>
+          <nav class="navbar col-auto ms-auto">
+            <ul class="navbar-nav d-flex flex-row">
+              <li class="nav-item"><a href="#info-section" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="#service-section" class="nav-link">Services</a></li>
+              <li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content Section -->
+    <div id="info-section" class="container mt-4">
+      <h1>Eco Horizon Initiative (E-HI)</h1>
+      <p>
+        With 18 years of passionate volunteering experience in sustainability,
+        we are a team of eco-enthusiasts dedicated to empowering a greener
+        future. Through learning journeys, workshops, team-building activities,
+        and event management, Eco Horizon Initiative(E-HI) inspire meaningful
+        action toward sustainability.
+      </p>
+      <h2>Mission</h1>
+      <p>
+        To share and educate members of the public towards stewardship of a safe clean sustainable environment.
+      </p>
+      <!-- <a href="about-us.html" class="btn find-out-more-btn">Find Out More</a> -->
+    </div>
+
+    <div class="divider-1"></div>
+
+    <div id="service-section" class="container mt-4">
+      <h1>Our Services</h1>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="Img/Workshop.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Workshop</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="Img/Booth.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Event Planning/Management</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="Img/Talks.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Talk</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            </div>
+          <div class="col-md-4">
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="Img/Outdoor Programme.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Outdoor Programme / Learning Journey</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="Img/CSR.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">CSR/VIA</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="Img/Team bonding.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Team Bonding</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            </div>
+          <div class="col-md-4">
+            </div>
+        </div>
+      </div>
+      <!-- <a href="about-us.html" class="btn find-out-more-btn">Find Out More</a> -->
+    </div>
+
+    <div class="divider-1"></div>
+
+    <!-- Contact Section -->
+    <div id="contact-section" class="container mt-4">
+      <h1>Contact Us</h1>
+      <p>
+        We'd love to hear from you! Whether you have questions about our
+        services, want to collaborate, or need more information, feel free to
+        reach out to us.
+      </p>
+
+      <div class="row">
+        <!-- Contact Form -->
+        <div class="col-md-7">
+          <form id="contact-form" action="https://formspree.io/f/mbllleqo" method="post">
+            <input name="subject" type="hidden" value="[{{ name }}] E-Hi web enquiry">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="contact" class="form-label"
+                >Contact Number (Optional)</label
+              >
+              <input
+                type="contact-number"
+                class="form-control"
+                id="contact-number"
+                name="contact-number"
+                placeholder="Enter contact number"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn send-message-btn">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <div class="col-md-1"></div>
+
+        <!-- Contact Details -->
+        <div class="col-md-4">
+          <div class="divider-2"></div>
+          <ul class="list-unstyled">
+            <li>
+              <h5><i class="fa-solid fa-envelope"></i><b> Email:</b></h5>
+              <a href="mailto:eco.horizon.initiative@gmail.com"
+                >eco.horizon.initiative@gmail.com</a
+              >
+            </li>
+          </ul>
+          <ul class="list-unstyled">
+            <h5><i class="fa-solid fa-hashtag"></i><b> Social Media:</b></h5>
+            <li>
+              <a href="#" target="_blank" class="linkedin-icon">
+                <i class="fa-brands fa-linkedin"></i> Linkedin
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="instagram-icon"
+                ><i class="fa-brands fa-instagram"></i> Instagram</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank" class="facebook-icon"
+                ><i class="fa-brands fa-facebook"></i> Facebook</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        ></button>
+        <div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#info-section" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#service-section" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact-section" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
